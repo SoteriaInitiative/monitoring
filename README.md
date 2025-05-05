@@ -26,10 +26,12 @@ Please consider [contributing](#contributing)!
 1. Clone the repo
 ```zsh
 git clone https://github.com/SoteriaInitiative/monitoring.git
-cd coredata
+cd monitoring
 ```
 2. Install the required dependencies
 ```zsh
+brew install tesseract
+
 pip install -r requirements.txt
 ```
 3. Run data collection & report generation
@@ -74,11 +76,17 @@ Contributions are welcome! To get started:
 # 🚀 Features
 
 This release includes the following key features:
-- ..
+- A list of data sources for FIU
+- An initial methodology description
+- Data collection and extraction for FATF Ratings
+- Manual seed data of baseline SAR counts for selected countries
 
 # ⚠️ Limitations:
 Please consider the following limitations or known issues:
-- ..
+- FATF Rating extraction is still unreliable and lacks source link inclusion
+- Several countries missing in data report
+- No correlation reports are generated
+- Most metrics remain empty
 - 
 # 📄 License
 This project is licensed under the MIT License.
